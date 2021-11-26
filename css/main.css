@@ -256,16 +256,14 @@ body {
   left: 1235px;
 }
 .welcome {
-  position: relative;
+  position: absolute;
   display: block;
+  width: 100%;
 }
 .welcome .container {
-  position: absolute;
   top: -90px;
-  left: 10%;
-  display: block;
-  width: 1140px;
-  height: 205px;
+  position: relative;
+  margin: 0 auto;
   background: #fff;
   z-index: 11;
 }
