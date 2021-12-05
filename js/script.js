@@ -1,4 +1,19 @@
 window.onload = function () {
+
+    const btn = document.querySelector(".modal-btn");
+    var modal = document.querySelector(".modal");
+    const modal_content = document.querySelector(".modal-content");
+
+    function modal_close(params) {
+        params.addEventListener("click", function (e) {
+            modal.style.display = "none";
+            modal_content.style.display = "none";
+        })
+    }
+    modal_close(btn);
+    modal_close(modal);
+
+
     var swiperBanner = new Swiper('.sw-banner', {
         loop: true,
         effect: 'fade',

@@ -21,8 +21,55 @@
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="images/favicons.png">
 </head>
+<style>
+    /* 모달창 */
+    .black-bg {
+        z-index: 99999998;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .white-bg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99999999;
+        background: #fff;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .modal-btn {
+        margin-top: 20px;
+        color: #fff;
+        background-color: darkgrey;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+</style>
 
 <body>
+    <div class="modal black-bg">
+    </div>
+    <div class="white-bg modal-content">
+        <p>
+            본 사이트는 학습용 목적으로 만들어 졌습니다.<br>
+            모든 저작권은 원작자에게 있습니다.
+        </p>
+        <button class="modal-btn">닫기</button>
+    </div>
     <div class="wrap">
         <!-- 상단영역 -->
         <div class="header-wrap">
@@ -92,30 +139,30 @@
                     <div class="welcome-slide">
                         <div class="swiper-container sw-welcome">
                             <div class="swiper-wrapper">
-                            <div class="swiper-slide sw-wc-slide">
-                                <img src="./images/swm_1.png">
-                                <p>음용내역</p>
-                            </div>
-                            <div class="swiper-slide sw-wc-slide">
-                                <img src="./images/swm_2.png">
-                                <p>음용제품변경</p>
-                            </div>
-                            <div class="swiper-slide sw-wc-slide">
-                                <img src="./images/swm_3.png">
-                                <p>찜한제품</p>
-                            </div>
-                            <div class="swiper-slide sw-wc-slide">
-                                <img src="./images/swm_4.png">
-                                <p>고객번호등록/찾기</p>
-                            </div>
-                            <div class="swiper-slide sw-wc-slide">
-                                <img src="./images/swm_5.png">
-                                <p>스마트청구서</p>
-                            </div>
-                            <div class="swiper-slide sw-wc-slide">
-                                <img src="./images/swm_6.png">
-                                <p>배달건너뛰기</p>
-                            </div>
+                                <div class="swiper-slide sw-wc-slide">
+                                    <img src="./images/swm_1.png">
+                                    <p>음용내역</p>
+                                </div>
+                                <div class="swiper-slide sw-wc-slide">
+                                    <img src="./images/swm_2.png">
+                                    <p>음용제품변경</p>
+                                </div>
+                                <div class="swiper-slide sw-wc-slide">
+                                    <img src="./images/swm_3.png">
+                                    <p>찜한제품</p>
+                                </div>
+                                <div class="swiper-slide sw-wc-slide">
+                                    <img src="./images/swm_4.png">
+                                    <p>고객번호등록/찾기</p>
+                                </div>
+                                <div class="swiper-slide sw-wc-slide">
+                                    <img src="./images/swm_5.png">
+                                    <p>스마트청구서</p>
+                                </div>
+                                <div class="swiper-slide sw-wc-slide">
+                                    <img src="./images/swm_6.png">
+                                    <p>배달건너뛰기</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,314 +232,314 @@
                         <li><a href="#">50대</a></li>
                     </ul>
                 </div>
-            <div class="box-wrap">
+                <div class="box-wrap">
 
-                <div class="best-right">
-                    <div class="best-rank no1">
-                        <a href="#">
-                        <span class="rank-img1"></span>
-                        <span class="rank-no1"><em>1</em>위</span>
-                        <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
-                        <span class="rank-pri1">2,000원</span>
-                        <span class="vol1">(150)ml</span>
-                        <span class="rank-icon"></span>
+                    <div class="best-right">
+                        <div class="best-rank no1">
+                            <a href="#">
+                                <span class="rank-img1"></span>
+                                <span class="rank-no1"><em>1</em>위</span>
+                                <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
+                                <span class="rank-pri1">2,000원</span>
+                                <span class="vol1">(150)ml</span>
+                                <span class="rank-icon"></span>
 
-                        </a>
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-2"></span>
+                                <span class="rank-no"><em>2</em>위</span>
+                                <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-3"></span>
+                                <span class="rank-no"><em>3</em>위</span>
+                                <span class="rank-tit">노니 & 깔라만시</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-4"></span>
+                                <span class="rank-no"><em>4</em>위</span>
+                                <span class="rank-tit">식물성 유산균 쌀 요거트</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-5"></span>
+                                <span class="rank-no"><em>5</em>위</span>
+                                <span class="rank-tit">러브미 케일&셀러리</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(130)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-2"></span>
-                        <span class="rank-no"><em>2</em>위</span>
-                        <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
+                    <div class="best-right">
+                        <div class="best-rank no1">
+                            <a href="#">
+                                <span class="rank-img1"></span>
+                                <span class="rank-no1"><em>1</em>위</span>
+                                <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
+                                <span class="rank-pri1">2,000원</span>
+                                <span class="vol1">(150)ml</span>
+                                <span class="rank-icon"></span>
 
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-3"></span>
-                        <span class="rank-no"><em>3</em>위</span>
-                        <span class="rank-tit">노니 & 깔라만시</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-2"></span>
+                                <span class="rank-no"><em>2</em>위</span>
+                                <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
 
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-4"></span>
-                        <span class="rank-no"><em>4</em>위</span>
-                        <span class="rank-tit">식물성 유산균 쌀 요거트</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-3"></span>
+                                <span class="rank-no"><em>3</em>위</span>
+                                <span class="rank-tit">노니 & 깔라만시</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
 
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-5"></span>
-                        <span class="rank-no"><em>5</em>위</span>
-                        <span class="rank-tit">러브미 케일&셀러리</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(130)ml</span>
-                        <span class="rank-icon"></span>
-                        
 
-                        </a>
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-4"></span>
+                                <span class="rank-no"><em>4</em>위</span>
+                                <span class="rank-tit">식물성 유산균 쌀 요거트</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-5"></span>
+                                <span class="rank-no"><em>5</em>위</span>
+                                <span class="rank-tit">러브미 케일&셀러리</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(130)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+
                     </div>
-                    
+                    <div class="best-right">
+                        <div class="best-rank no1">
+                            <a href="#">
+                                <span class="rank-img1"></span>
+                                <span class="rank-no1"><em>1</em>위</span>
+                                <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
+                                <span class="rank-pri1">2,000원</span>
+                                <span class="vol1">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-2"></span>
+                                <span class="rank-no"><em>2</em>위</span>
+                                <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-3"></span>
+                                <span class="rank-no"><em>3</em>위</span>
+                                <span class="rank-tit">노니 & 깔라만시</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-4"></span>
+                                <span class="rank-no"><em>4</em>위</span>
+                                <span class="rank-tit">식물성 유산균 쌀 요거트</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-5"></span>
+                                <span class="rank-no"><em>5</em>위</span>
+                                <span class="rank-tit">러브미 케일&셀러리</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(130)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="best-right">
+                        <div class="best-rank no1">
+                            <a href="#">
+                                <span class="rank-img1"></span>
+                                <span class="rank-no1"><em>1</em>위</span>
+                                <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
+                                <span class="rank-pri1">2,000원</span>
+                                <span class="vol1">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-2"></span>
+                                <span class="rank-no"><em>2</em>위</span>
+                                <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-3"></span>
+                                <span class="rank-no"><em>3</em>위</span>
+                                <span class="rank-tit">노니 & 깔라만시</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-4"></span>
+                                <span class="rank-no"><em>4</em>위</span>
+                                <span class="rank-tit">식물성 유산균 쌀 요거트</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-5"></span>
+                                <span class="rank-no"><em>5</em>위</span>
+                                <span class="rank-tit">러브미 케일&셀러리</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(130)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="best-right">
+                        <div class="best-rank no1">
+                            <a href="#">
+                                <span class="rank-img1"></span>
+                                <span class="rank-no1"><em>1</em>위</span>
+                                <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
+                                <span class="rank-pri1">2,000원</span>
+                                <span class="vol1">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-2"></span>
+                                <span class="rank-no"><em>2</em>위</span>
+                                <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-3"></span>
+                                <span class="rank-no"><em>3</em>위</span>
+                                <span class="rank-tit">노니 & 깔라만시</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-4"></span>
+                                <span class="rank-no"><em>4</em>위</span>
+                                <span class="rank-tit">식물성 유산균 쌀 요거트</span>
+                                <span class="rank-pri">2,000원</span>
+                                <span class="vol">(150)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+                        <div class="best-rank">
+                            <a href="#">
+                                <span class="rank-img img-5"></span>
+                                <span class="rank-no"><em>5</em>위</span>
+                                <span class="rank-tit">러브미 케일&셀러리</span>
+                                <span class="rank-pri">1,800원</span>
+                                <span class="vol">(130)ml</span>
+                                <span class="rank-icon"></span>
+
+
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="best-right">
-                    <div class="best-rank no1">
-                        <a href="#">
-                        <span class="rank-img1"></span>
-                        <span class="rank-no1"><em>1</em>위</span>
-                        <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
-                        <span class="rank-pri1">2,000원</span>
-                        <span class="vol1">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-2"></span>
-                        <span class="rank-no"><em>2</em>위</span>
-                        <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-3"></span>
-                        <span class="rank-no"><em>3</em>위</span>
-                        <span class="rank-tit">노니 & 깔라만시</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-4"></span>
-                        <span class="rank-no"><em>4</em>위</span>
-                        <span class="rank-tit">식물성 유산균 쌀 요거트</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-5"></span>
-                        <span class="rank-no"><em>5</em>위</span>
-                        <span class="rank-tit">러브미 케일&셀러리</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(130)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="best-right">
-                    <div class="best-rank no1">
-                        <a href="#">
-                        <span class="rank-img1"></span>
-                        <span class="rank-no1"><em>1</em>위</span>
-                        <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
-                        <span class="rank-pri1">2,000원</span>
-                        <span class="vol1">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-2"></span>
-                        <span class="rank-no"><em>2</em>위</span>
-                        <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-3"></span>
-                        <span class="rank-no"><em>3</em>위</span>
-                        <span class="rank-tit">노니 & 깔라만시</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-4"></span>
-                        <span class="rank-no"><em>4</em>위</span>
-                        <span class="rank-tit">식물성 유산균 쌀 요거트</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-5"></span>
-                        <span class="rank-no"><em>5</em>위</span>
-                        <span class="rank-tit">러브미 케일&셀러리</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(130)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="best-right">
-                    <div class="best-rank no1">
-                        <a href="#">
-                        <span class="rank-img1"></span>
-                        <span class="rank-no1"><em>1</em>위</span>
-                        <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
-                        <span class="rank-pri1">2,000원</span>
-                        <span class="vol1">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-2"></span>
-                        <span class="rank-no"><em>2</em>위</span>
-                        <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-3"></span>
-                        <span class="rank-no"><em>3</em>위</span>
-                        <span class="rank-tit">노니 & 깔라만시</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-4"></span>
-                        <span class="rank-no"><em>4</em>위</span>
-                        <span class="rank-tit">식물성 유산균 쌀 요거트</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-5"></span>
-                        <span class="rank-no"><em>5</em>위</span>
-                        <span class="rank-tit">러브미 케일&셀러리</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(130)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="best-right">
-                    <div class="best-rank no1">
-                        <a href="#">
-                        <span class="rank-img1"></span>
-                        <span class="rank-no1"><em>1</em>위</span>
-                        <span class="rank-tit1">식물성 유산균 위 & 캡슐</span>
-                        <span class="rank-pri1">2,000원</span>
-                        <span class="vol1">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-2"></span>
-                        <span class="rank-no"><em>2</em>위</span>
-                        <span class="rank-tit">식물성 유산균 오메가 & 치아씨드</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-3"></span>
-                        <span class="rank-no"><em>3</em>위</span>
-                        <span class="rank-tit">노니 & 깔라만시</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-4"></span>
-                        <span class="rank-no"><em>4</em>위</span>
-                        <span class="rank-tit">식물성 유산균 쌀 요거트</span>
-                        <span class="rank-pri">2,000원</span>
-                        <span class="vol">(150)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    <div class="best-rank">
-                        <a href="#">
-                        <span class="rank-img img-5"></span>
-                        <span class="rank-no"><em>5</em>위</span>
-                        <span class="rank-tit">러브미 케일&셀러리</span>
-                        <span class="rank-pri">1,800원</span>
-                        <span class="vol">(130)ml</span>
-                        <span class="rank-icon"></span>
-                        
-
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
 
             </div>
         </section>
@@ -603,37 +650,37 @@
             </div>
             <div class="footer-cont clearfix">
                 <div class="container">
-                <a href="#" class="f-logo"></a>
-                <div class="f-txt">
-                <ul class="f-txt-list">
-                    <li>㈜풀무원녹즙</li>
-                    <li>대표이사:김기석</li>
-                    <li>대표전화:02-2186-8500</li>
-                    <li>개인정보관리책임자:김정만</li>
-                    <li>사업자등록번호:301-81-98406</li>
-                </ul>
-                <ul class="f-txt-list">
-                    <li>통신판매번호:2016-충북증평-00045<a href="#">사업자정보확인</a></li>
-                    <li>㈜풀무원녹즙 충청북도 증평군 도안면 원명로35</li>
-                    <li><em>고객센터:080-800-0393</em>(평일 09:00~18:00 토,일, 공휴일 휴무)</li>
-                </ul>
-                <span class="copy">COPYRIGHTⒸpulmuonegreenjuice.co.,Ltd.ALL RIGHTS RESERVED</span>
-                </div>
-                <select name="pullmuone-family" id="family-site" class="f-select">
-                    <option value="">풀무원건강생활</option>
-                    <option value="">풀무원로하스</option>
-                    <option value="">풀무원베이비밀</option>
-                    <option value="">풀무원잇스림</option>
-                    <option value="">풀무원아미오</option>
-                    <option value="">풀무원홀딩스</option>
-                    <option value="">풀무원샵</option>
-                    <option value="">뮤지업김치간</option>
-                    <option value="">풀무원샘물</option>
-                    <option value="">올가홀푸드</option>
-                    <option value="">풀무원푸드앤컬처</option>
-                    <option value="">풀무원푸드머스</option>
-                    <option value="">엑소후레쉬</option>
-                </select>
+                    <a href="#" class="f-logo"></a>
+                    <div class="f-txt">
+                        <ul class="f-txt-list">
+                            <li>㈜풀무원녹즙</li>
+                            <li>대표이사:김기석</li>
+                            <li>대표전화:02-2186-8500</li>
+                            <li>개인정보관리책임자:김정만</li>
+                            <li>사업자등록번호:301-81-98406</li>
+                        </ul>
+                        <ul class="f-txt-list">
+                            <li>통신판매번호:2016-충북증평-00045<a href="#">사업자정보확인</a></li>
+                            <li>㈜풀무원녹즙 충청북도 증평군 도안면 원명로35</li>
+                            <li><em>고객센터:080-800-0393</em>(평일 09:00~18:00 토,일, 공휴일 휴무)</li>
+                        </ul>
+                        <span class="copy">COPYRIGHTⒸpulmuonegreenjuice.co.,Ltd.ALL RIGHTS RESERVED</span>
+                    </div>
+                    <select name="pullmuone-family" id="family-site" class="f-select">
+                        <option value="">풀무원건강생활</option>
+                        <option value="">풀무원로하스</option>
+                        <option value="">풀무원베이비밀</option>
+                        <option value="">풀무원잇스림</option>
+                        <option value="">풀무원아미오</option>
+                        <option value="">풀무원홀딩스</option>
+                        <option value="">풀무원샵</option>
+                        <option value="">뮤지업김치간</option>
+                        <option value="">풀무원샘물</option>
+                        <option value="">올가홀푸드</option>
+                        <option value="">풀무원푸드앤컬처</option>
+                        <option value="">풀무원푸드머스</option>
+                        <option value="">엑소후레쉬</option>
+                    </select>
                 </div>
             </div>
         </footer>
